@@ -1,0 +1,12 @@
+jms_serializer:
+    visitors:
+        xml_serialization:
+            format_output: '%kernel.debug%'
+    metadata:
+        file_cache:
+            dir: "%kernel.cache_dir%/serializer"
+        auto_detection: true
+        directories:
+            FOSUB:
+                namespace_prefix: "FOS\\UserBundle"
+                path: "%kernel.root_dir%/serializer/FOSUB"
